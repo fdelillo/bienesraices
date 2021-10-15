@@ -32,8 +32,11 @@
     text-align: center;
     margin-top: $separacion / 2;
     display: $display;
+    border: none;
+
 
     &:hover {
         background-color: darken($bcColor, 5);
+        cursor: pointer;
     }
 }
