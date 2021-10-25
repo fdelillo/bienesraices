@@ -3,9 +3,9 @@
     require '../../includes/funciones.php';
     $auth = estaAutenticado();
 
-    /*if(!$auth) {
-        header('Location: /');
-    }*/
+    if(!$auth) {
+        header('Location: /bienesraices');
+    }
 
     //obtengo el id de la propiedad para actualizar y valido que sea un id valido
     $id = filter_var($_GET['id'],FILTER_VALIDATE_INT);
