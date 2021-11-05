@@ -1,6 +1,6 @@
 <?php 
-    // Importar la base
-    require 'includes/config/database.php';
+    require 'includes/App.php';
+
     $db = conectarDB();
 
     $errores = [];
@@ -48,7 +48,6 @@
         }
     }
 
-    require 'includes/funciones.php';
     incluirTemplate('header');
 ?>
 

@@ -1,14 +1,8 @@
 <?php
 
-    require '../includes/funciones.php';
-    $auth = estaAutenticado();
+    require '../includes/App.php';
+    estaAutenticado();
 
-    if(!$auth) {
-        header('Location: /bienesraices');
-    }
-
-    // Importo la conexion
-    require '../includes/config/database.php';
     $db = conectarDB();
     // Creo la consulta
     $query = "SELECT * FROM propiedades";

@@ -1,0 +1,19 @@
+{
+    "name": "fede/bienesraices",
+    "description": "Creando un proyecto con POO",
+    "Type": "Project",
+    "authors": [
+        {
+            "name": "Federico De Lillo",
+            "email": "federicodelillo@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    }
+}

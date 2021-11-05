@@ -1,6 +1,6 @@
 <?php 
 
-    require '../../includes/funciones.php';
+    require '../../includes/App.php';
     $auth = estaAutenticado();
 
     if(!$auth) {
@@ -14,7 +14,6 @@
     }
 
     // Base de datos
-    require '../../includes/config/database.php';
     $db = conectarDB();
 
     // Consultar para obtener los datos de la propiedad pasada porid
